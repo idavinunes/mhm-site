@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="MHM">
+  <!-- Preto quente do site + dourado do logo. Monograma em path, não em texto:
+       favicon não herda as fontes da página. -->
+  <rect width="64" height="64" rx="14" fill="#0E0A08"/>
+  <path d="M11 46 V18 H18.5 L32 33.5 L45.5 18 H53 V46 H45 V29.5 L32 44.5 L19 29.5 V46 Z" fill="#F4C958"/>
+</svg>

@@ -2,7 +2,7 @@
 <html><head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>MHM</title>{{ICONS}}<style id="mms-mobile">@media (max-width:768px){.mms-bank-box{width:104px!important;height:58px!important;padding:8px 10px!important;}.mms-bank{height:100%!important;width:100%!important;}.mms-slogan-top{display:none!important;}html,body{overflow-x:hidden!important;}img,svg,video,canvas{max-width:100%!important;height:auto!important;}[style*="grid-template-columns"]{grid-template-columns:1fr!important;}[style*="width: 430px"],[style*="width:430px"],[style*="width: 420px"],[style*="width:420px"]{width:100%!important;max-width:100%!important;}}</style>
+<title>MHM</title>{{ICONS}}<style id="mms-mobile">@media (min-width:769px){.mhm-desnivel{margin-top:46px}}@media (max-width:768px){header>div{flex-wrap:wrap!important;gap:6px 10px!important;}header>div>div{flex:0 0 auto!important;}header nav{flex-wrap:wrap!important;justify-content:center!important;gap:2px!important;width:100%!important;order:3!important;}header nav span{padding:7px 9px!important;font-size:14px!important;}}@media (max-width:768px){.mms-bank-box{width:104px!important;height:58px!important;padding:8px 10px!important;}.mms-bank{height:100%!important;width:100%!important;}.mms-slogan-top{display:none!important;}html,body{overflow-x:hidden!important;}img,svg,video,canvas{max-width:100%!important;height:auto!important;}[style*="grid-template-columns"]{grid-template-columns:1fr!important;}[style*="width: 430px"],[style*="width:430px"],[style*="width: 420px"],[style*="width:420px"]{width:100%!important;max-width:100%!important;}}</style>
 <script src="f95ae4b6-6e9c-4b51-9d68-e5e311befa39"></script>
 </head>
 <body>
@@ -478,19 +478,18 @@
   <!-- ========================= NAV ========================= -->
   <header style="position: sticky; top: 0; z-index: 50; background: linear-gradient(180deg, #0E0A08 0%, #0A0706 100%); border-bottom: 1px solid rgba(255,255,255,.12); box-shadow: 0 4px 20px -8px rgba(0,0,0,.5);">
     <div style="max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; padding: 8px 28px;">
-      <div onclick="{{ goHome }}" style="cursor: pointer; display: flex; align-items: center; gap: 12px;">
+      <div onclick="{{ goHome }}" style="flex: 1; cursor: pointer; display: flex; align-items: center; gap: 12px;">
         <img src="b25ebf7c-5244-4bd0-a92b-d2e875f58dc5" alt="MHM Solution" style="height: 34px; width: auto; display: block;"><span class="mms-slogan-top" style="font-family:'Plus Jakarta Sans',sans-serif; font-size:13px; font-weight:500; color:rgba(255,255,255,.72); padding-left:12px; border-left:1px solid rgba(255,255,255,.22); line-height:1.25; white-space:nowrap;">Sua vida financeira<br>mais leve</span>
-      </div>
-      <nav style="display: flex; align-items: center; gap: 6px; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 600; font-size: 16px;">
+      </div><nav style="display: flex; align-items: center; gap: 6px; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 600; font-size: 16px;">
         <span onclick="{{ goHome }}" style="cursor: pointer; padding: 9px 14px; border-radius: 9px; color: #D2C8B4;" style-hover="background:rgba(255,255,255,.08); color:#F0D48A;">Início</span>
         <span onclick="{{ goServicos }}" style="cursor: pointer; padding: 9px 14px; border-radius: 9px; color: #D2C8B4;" style-hover="background:rgba(255,255,255,.08); color:#F0D48A;">Serviços</span>
         <span onclick="{{ goSobre }}" style="cursor: pointer; padding: 9px 14px; border-radius: 9px; color: #D2C8B4;" style-hover="background:rgba(255,255,255,.08); color:#F0D48A;">Sobre</span>
         <span onclick="{{ goSimulador }}" style="cursor: pointer; padding: 9px 14px; border-radius: 9px; color: #D2C8B4;" style-hover="background:rgba(255,255,255,.08); color:#F0D48A;">Simulador</span>
         <span onclick="{{ goFaq }}" style="cursor: pointer; padding: 9px 14px; border-radius: 9px; color: #D2C8B4;" style-hover="background:rgba(255,255,255,.08); color:#F0D48A;">Dúvidas</span>
-        <a href="{{ waLink }}" target="_blank" title="Falar no WhatsApp" aria-label="Falar no WhatsApp" style="text-decoration: none; display: inline-flex; align-items: center; justify-content: center; background: #158746; color: #fff; width: 46px; height: 46px; border-radius: 999px; margin-left: 10px; box-shadow: 0 8px 18px -8px rgba(31,168,85,.7);">
+        
+      </nav><div style="flex: 1; display: flex; justify-content: flex-end;"><a href="{{ waLink }}" target="_blank" title="Falar no WhatsApp" aria-label="Falar no WhatsApp" style="text-decoration: none; display: inline-flex; align-items: center; justify-content: center; background: #158746; color: #fff; width: 46px; height: 46px; border-radius: 999px; margin-left: 10px; box-shadow: 0 8px 18px -8px rgba(31,168,85,.7);">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="#fff"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.945C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 018.413 3.488 11.82 11.82 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.978-1.043zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.096 3.2 5.077 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"></path></svg>
-        </a>
-      </nav>
+        </a></div>
     </div>
   </header>
 
@@ -563,27 +562,27 @@
           <div style="font-family: 'Plus Jakarta Sans', sans-serif; font-size: 14px; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; color: #8A6A14;">Como funciona</div>
           <h2 style="font-family: 'Plus Jakarta Sans', sans-serif; font-size: 42px; font-weight: 800; color: #17120D; margin: 10px 0 0; letter-spacing: -0.01em;">Simples, do início ao fim</h2>
         </div>
-        <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px;">
-          <div style="text-align: center; padding: 0 8px;">
-            <div style="width: 60px; height: 60px; margin: 0 auto 16px; border-radius: 50%; background: #17120D; color: #fff; display: flex; align-items: center; justify-content: center; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 800; font-size: 24px;">1</div>
+        <div style="display: grid; grid-template-columns: 1fr; gap: 14px;">
+          <div style="display: flex; align-items: center; gap: 22px; text-align: left; padding: 18px 22px; background: #FAF8F4; border: 1px solid #F2EFE9; border-radius: 16px;">
+            <div style="width: 60px; height: 60px; margin: 0; flex: 0 0 auto; border-radius: 50%; background: #17120D; color: #fff; display: flex; align-items: center; justify-content: center; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 800; font-size: 24px;">1</div><div style="display: flex; flex-direction: column; gap: 3px;">
             <div style="font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 800; font-size: 19px; color: #17120D; margin-bottom: 8px;">Você fala com a gente</div>
             <p style="font-size: 15px; color: #6B6155; line-height: 1.6; margin: 0;">Pelo WhatsApp ou simulador, sem nenhum custo.</p>
-          </div>
-          <div style="text-align: center; padding: 0 8px;">
-            <div style="width: 60px; height: 60px; margin: 0 auto 16px; border-radius: 50%; background: #17120D; color: #fff; display: flex; align-items: center; justify-content: center; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 800; font-size: 24px;">2</div>
+          </div></div>
+          <div style="display: flex; align-items: center; gap: 22px; text-align: left; padding: 18px 22px; background: #FAF8F4; border: 1px solid #F2EFE9; border-radius: 16px;">
+            <div style="width: 60px; height: 60px; margin: 0; flex: 0 0 auto; border-radius: 50%; background: #17120D; color: #fff; display: flex; align-items: center; justify-content: center; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 800; font-size: 24px;">2</div><div style="display: flex; flex-direction: column; gap: 3px;">
             <div style="font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 800; font-size: 19px; color: #17120D; margin-bottom: 8px;">Analisamos seu caso</div>
             <p style="font-size: 15px; color: #6B6155; line-height: 1.6; margin: 0;">Entendemos sua real necessidade e a melhor opção.</p>
-          </div>
-          <div style="text-align: center; padding: 0 8px;">
-            <div style="width: 60px; height: 60px; margin: 0 auto 16px; border-radius: 50%; background: #17120D; color: #fff; display: flex; align-items: center; justify-content: center; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 800; font-size: 24px;">3</div>
+          </div></div>
+          <div style="display: flex; align-items: center; gap: 22px; text-align: left; padding: 18px 22px; background: #FAF8F4; border: 1px solid #F2EFE9; border-radius: 16px;">
+            <div style="width: 60px; height: 60px; margin: 0; flex: 0 0 auto; border-radius: 50%; background: #17120D; color: #fff; display: flex; align-items: center; justify-content: center; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 800; font-size: 24px;">3</div><div style="display: flex; flex-direction: column; gap: 3px;">
             <div style="font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 800; font-size: 19px; color: #17120D; margin-bottom: 8px;">Cuidamos da papelada</div>
             <p style="font-size: 15px; color: #6B6155; line-height: 1.6; margin: 0;">Negociamos com o banco e resolvemos tudo por você.</p>
-          </div>
-          <div style="text-align: center; padding: 0 8px;">
-            <div style="width: 60px; height: 60px; margin: 0 auto 16px; border-radius: 50%; background: #158746; color: #fff; display: flex; align-items: center; justify-content: center; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 800; font-size: 24px;">✓</div>
+          </div></div>
+          <div style="display: flex; align-items: center; gap: 22px; text-align: left; padding: 18px 22px; background: #FAF8F4; border: 1px solid #F2EFE9; border-radius: 16px;">
+            <div style="width: 60px; height: 60px; margin: 0; flex: 0 0 auto; border-radius: 50%; background: #158746; color: #fff; display: flex; align-items: center; justify-content: center; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 800; font-size: 24px;">✓</div><div style="display: flex; flex-direction: column; gap: 3px;">
             <div style="font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 800; font-size: 19px; color: #17120D; margin-bottom: 8px;">Você economiza</div>
             <p style="font-size: 15px; color: #6B6155; line-height: 1.6; margin: 0;">Com acompanhamento sempre que precisar.</p>
-          </div>
+          </div></div>
         </div>
       </div>
     </section><!-- SERVIÇOS -->
@@ -594,13 +593,13 @@
           <h2 style="font-family: 'Plus Jakarta Sans', sans-serif; font-size: 42px; font-weight: 800; color: #17120D; margin: 10px 0 14px; letter-spacing: -0.01em;">Tudo o que você precisa em um só lugar</h2>
           <p style="font-size: 18px; color: #6B6155; margin: 0; line-height: 1.6;">Cuidamos de cada etapa para você ter mais tranquilidade no fim do mês.</p>
         </div>
-        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px;">
+        <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px;">
           <div style="background: #fff; border: 1px solid #F2EFE9; border-radius: 20px; padding: 30px; box-shadow: 0 1px 2px rgba(16,44,84,.04); transition: transform .3s ease, box-shadow .3s ease;" style-hover="transform: translateY(-6px); box-shadow: 0 22px 44px -22px rgba(16,44,84,.3);">
             <div style="width: 56px; height: 56px; border-radius: 16px; background: linear-gradient(145deg,#FAF2DE,#F6E7C0); display: flex; align-items: center; justify-content: center; font-size: 26px; margin-bottom: 18px;">🏦</div>
             <div style="font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 800; font-size: 21px; color: #17120D; margin-bottom: 8px;">Empréstimo consignado</div>
             <p style="font-size: 16px; color: #6B6155; line-height: 1.6; margin: 0;">As melhores taxas do mercado para aposentados, pensionistas do INSS e servidores federais, com desconto direto no benefício.</p>
           </div>
-          <div style="background: #fff; border: 1px solid #F2EFE9; border-radius: 20px; padding: 30px; box-shadow: 0 1px 2px rgba(16,44,84,.04); transition: transform .3s ease, box-shadow .3s ease;" style-hover="transform: translateY(-6px); box-shadow: 0 22px 44px -22px rgba(16,44,84,.3);">
+          <div class="mhm-desnivel" style="background: #fff; border: 1px solid #F2EFE9; border-radius: 20px; padding: 30px; box-shadow: 0 1px 2px rgba(16,44,84,.04); transition: transform .3s ease, box-shadow .3s ease;" style-hover="transform: translateY(-6px); box-shadow: 0 22px 44px -22px rgba(16,44,84,.3);">
             <div style="width: 56px; height: 56px; border-radius: 16px; background: linear-gradient(145deg,#FAF2DE,#F6E7C0); display: flex; align-items: center; justify-content: center; font-size: 26px; margin-bottom: 18px;">🔄</div>
             <div style="font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 800; font-size: 21px; color: #17120D; margin-bottom: 8px;">Refinanciamento</div>
             <p style="font-size: 16px; color: #6B6155; line-height: 1.6; margin: 0;">Renove seu contrato com condições melhores, libere um novo valor e ainda reorganize suas finanças sem dor de cabeça.</p>
@@ -610,7 +609,7 @@
             <div style="font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 800; font-size: 21px; color: #17120D; margin-bottom: 8px;">Redução de parcelas</div>
             <p style="font-size: 16px; color: #6B6155; line-height: 1.6; margin: 0;">Negociamos diretamente com o banco para diminuir o valor que pesa todo mês no seu orçamento.</p>
           </div>
-          <div style="background: #fff; border: 1px solid #F2EFE9; border-radius: 20px; padding: 30px; box-shadow: 0 1px 2px rgba(16,44,84,.04); transition: transform .3s ease, box-shadow .3s ease;" style-hover="transform: translateY(-6px); box-shadow: 0 22px 44px -22px rgba(16,44,84,.3);">
+          <div class="mhm-desnivel" style="background: #fff; border: 1px solid #F2EFE9; border-radius: 20px; padding: 30px; box-shadow: 0 1px 2px rgba(16,44,84,.04); transition: transform .3s ease, box-shadow .3s ease;" style-hover="transform: translateY(-6px); box-shadow: 0 22px 44px -22px rgba(16,44,84,.3);">
             <div style="width: 56px; height: 56px; border-radius: 16px; background: linear-gradient(145deg,#FAF2DE,#F6E7C0); display: flex; align-items: center; justify-content: center; font-size: 26px; margin-bottom: 18px;">💳</div>
             <div style="font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 800; font-size: 21px; color: #17120D; margin-bottom: 8px;">Crédito pessoal</div>
             <p style="font-size: 16px; color: #6B6155; line-height: 1.6; margin: 0;">Quando você precisa de um dinheiro extra com tranquilidade, encontramos a opção que cabe no seu bolso.</p>
@@ -620,7 +619,7 @@
             <div style="font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 800; font-size: 21px; color: #17120D; margin-bottom: 8px;">Acompanhamento e SAC</div>
             <p style="font-size: 16px; color: #6B6155; line-height: 1.6; margin: 0;">Uma central de atendimento que resolve de verdade, do primeiro contato até depois da contratação.</p>
           </div>
-          <div style="background: linear-gradient(150deg,#2A2118,#0E0A08); border-radius: 20px; padding: 30px; display: flex; flex-direction: column; justify-content: center;">
+          <div class="mhm-desnivel" style="background: linear-gradient(150deg,#2A2118,#0E0A08); border-radius: 20px; padding: 30px; display: flex; flex-direction: column; justify-content: center;">
             <div style="font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 800; font-size: 21px; color: #fff; margin-bottom: 8px;">Não sabe por onde começar?</div>
             <p style="font-size: 16px; color: #D2C8B4; line-height: 1.6; margin: 0 0 18px;">Converse com um consultor e descubra a melhor opção pra você, sem compromisso.</p>
             <a href="{{ waLink }}" target="_blank" style="text-decoration: none; display: inline-flex; align-self: flex-start; align-items: center; gap: 8px; background: #158746; color: #fff; padding: 12px 22px; border-radius: 999px; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 800; font-size: 15px;">Falar agora</a>
